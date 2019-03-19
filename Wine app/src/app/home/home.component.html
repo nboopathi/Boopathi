@@ -1,0 +1,71 @@
+<div class="col-md-6 col-md-offset-3">
+        <header>
+                <p>Hi {{currentUser.firstName}}!</p>
+                <p><a [routerLink]="['/login']">Logout</a></p>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                <li><a href="#" (click)="hitAnchor1($event)">London</a></li>
+                <li><a href="#" (click)="hitAnchor2($event)">Paris</a></li>
+                <li><a href="#" (click)="hitAnchor3($event)">Tokyo</a></li>
+                </ul>
+            </nav>
+            
+            <article>
+                <kendo-grid [data]="gridData" [height]="370" *ngIf="IsSwapCostRuning">
+                    <kendo-grid-column field="ProductID" title="ID" width="40">
+                    </kendo-grid-column>
+                    <kendo-grid-column field="ProductName" title="Name" width="250">
+                    </kendo-grid-column>
+                    <kendo-grid-column field="Category.CategoryName" title="Category">
+                    </kendo-grid-column>
+                    <kendo-grid-column field="UnitPrice" title="Price" width="80">
+                    </kendo-grid-column>
+                    <kendo-grid-column field="UnitsInStock" title="In stock" width="80">
+                    </kendo-grid-column>
+                    <!-- <kendo-grid-column field="Discontinued" title="Discontinued" width="120">
+                        <template kendoGridCellTemplate let-dataItem>
+                            <input type="checkbox" [checked]="dataItem.Discontinued" disabled/>
+                        </template>
+                    </kendo-grid-column> -->
+                </kendo-grid>
+                <kendo-grid [data]="gridData" [height]="370" *ngIf="IsSwapCostRuning1">
+                        <kendo-grid-column field="ProductID" title="ID" width="40">
+                        </kendo-grid-column>
+                        <kendo-grid-column field="ProductName" title="Name" width="250">
+                        </kendo-grid-column>
+                        <kendo-grid-column field="Category.CategoryName" title="Category">
+                        </kendo-grid-column>
+                        <kendo-grid-column field="UnitPrice" title="Price" width="80">
+                        </kendo-grid-column>
+                        
+                 </kendo-grid>
+                 <kendo-grid [data]="gridData" [height]="370" *ngIf="IsSwapCostRuning2">
+                        <kendo-grid-column field="ProductID" title="ID" width="40">
+                        </kendo-grid-column>
+                        <kendo-grid-column field="ProductName" title="Name" width="250">
+                        </kendo-grid-column>
+                        <kendo-grid-column field="UnitPrice" title="Price" width="80">
+                        </kendo-grid-column>
+                        
+                 </kendo-grid>
+                
+            </article>
+        </section>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+                  
+    
+   <!--  <h3>All registered users:</h3>
+    <ul>
+        <li *ngFor="let user of users">
+            {{user.username}} ({{user.firstName}} {{user.lastName}})
+            - <a (click)="deleteUser(user.id)">Delete</a>
+        </li>
+    </ul> -->
+    
+    
+</div>

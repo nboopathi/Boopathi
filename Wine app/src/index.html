@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/" />
+    <title>Wine App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- bootstrap css -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="app.css" rel="stylesheet" />
+    <link href="../node_modules/@progress/kendo-theme-default/dist/all.css" rel="stylesheet" />
+    <!-- application css -->
+    <style>
+      a { cursor: pointer; }
+      .help-block { font-size: 12px; }
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+        float: left;
+        width: 30%;
+        /* height: 300px; only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+
+        list-style-type: none;
+        padding: 0;
+        float: left;
+        width: 30%;
+        height: 370px;
+        }
+
+        article {
+        float: right;
+        padding: 0px;
+        width: 70%;
+        background-color: #f1f1f1;
+        /* height: 300px; only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section{
+        content: "";
+        display: table;
+        clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        }
+    </style> 
+</head>
+<body>
+    <app>Loading...</app>
+</body>
+</html>
